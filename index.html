@@ -251,7 +251,7 @@
 
       <div class="flex items-center gap-3">
         <span id="slide-counter-pill" class="text-xs font-bold text-alphagen-purple bg-alphagen-purpleGhost px-3.5 py-1.5 rounded-full border border-alphagen-purplePale">
-          Slide 1 / 13
+          Slide 1 / 14
         </span>
 
         <select id="slide-dropdown" onchange="goToSlide(parseInt(this.value))" class="text-xs font-bold text-alphagen-nearBlack bg-alphagen-lightGrey hover:bg-slate-200 border border-slate-200 px-3 py-1.5 rounded-xl cursor-pointer focus:outline-none focus:border-alphagen-purple transition">
@@ -264,10 +264,11 @@
           <option value="7">7. Multiple Conditions Choice</option>
           <option value="8">8. Python Elif Explained</option>
           <option value="9">9. Coding Challenge Checklist II</option>
-          <option value="10">10. Logical Operators Analogy</option>
-          <option value="11">11. Understanding AND vs OR</option>
-          <option value="12">12. Logical Operators Challenges</option>
-          <option value="13">13. Master Knowledge Check</option>
+          <option value="10">10. Logical Operator AND Analogy</option>
+          <option value="11">11. Logical Operator OR Analogy</option>
+          <option value="12">12. Understanding AND vs OR</option>
+          <option value="13">13. Logical Operators Challenges</option>
+          <option value="14">14. Master Knowledge Check</option>
         </select>
 
         <button onclick="toggleAudio()" id="audio-btn" class="w-9 h-9 rounded-xl bg-alphagen-purpleGhost hover:bg-alphagen-purplePale text-alphagen-purple border border-alphagen-purplePale flex items-center justify-center text-sm transition btn-interactive" title="Toggle Sound">
@@ -286,8 +287,6 @@
         Let's Learn <br>
         <span class="spark-wavy-underline">Conditional Statements</span>
       </h1>
-
-    
 
       <button onclick="nextSlide(); playSound('pop')" class="bg-alphagen-yellow hover:bg-alphagen-yellowDark text-alphagen-nearBlack font-extrabold text-xl px-12 py-5 rounded-2xl shadow-xl btn-interactive flex items-center gap-3">
         <span>Start Exploring</span>
@@ -366,7 +365,7 @@
             <div class="grid grid-cols-3 gap-2 mb-4">
               <button onclick="selectOperator('>')" id="op-btn-gt" class="op-toggle-btn bg-alphagen-purple text-white font-mono font-bold text-lg p-3 rounded-xl btn-interactive text-center">&gt;</button>
               <button onclick="selectOperator('<')" id="op-btn-lt" class="op-toggle-btn bg-white border-2 border-alphagen-purplePale text-alphagen-purple font-mono font-bold text-lg p-3 rounded-xl btn-interactive text-center">&lt;</button>
-              <button onclick="selectOperator('>=')" id="op-btn-gte" class="op-toggle-btn bg-white border-2 border-alphagen-purplePale text-alphagen-purple font-mono font-bold text-lg p-3 rounded-xl btn-interactive text-center">>=</button>
+              <button onclick="selectOperator('>=')" id="op-btn-gte" class="op-toggle-btn bg-white border-2 border-alphagen-purplePale text-alphagen-purple font-mono font-bold text-lg p-3 rounded-xl btn-interactive text-center">&gt; =</button>
               <button onclick="selectOperator('<=')" id="op-btn-lte" class="op-toggle-btn bg-white border-2 border-alphagen-purplePale text-alphagen-purple font-mono font-bold text-lg p-3 rounded-xl btn-interactive text-center">&lt; =</button>
               <button onclick="selectOperator('==')" id="op-btn-eq" class="op-toggle-btn bg-white border-2 border-alphagen-purplePale text-alphagen-purple font-mono font-bold text-lg p-3 rounded-xl btn-interactive text-center">= =</button>
               <button onclick="selectOperator('!=')" id="op-btn-neq" class="op-toggle-btn bg-white border-2 border-alphagen-purplePale text-alphagen-purple font-mono font-bold text-lg p-3 rounded-xl btn-interactive text-center">! =</button>
@@ -566,11 +565,11 @@
         <div class="bg-alphagen-purpleGhost border-2 border-alphagen-purplePale p-6 rounded-3xl flex flex-col justify-between">
           <div>
             <span class="bg-alphagen-purple text-white font-extrabold text-xs px-3 py-1 rounded-full uppercase mb-3 inline-block">QUESTION 2</span>
-            <h3 class="font-extrabold text-base text-alphagen-nearBlack mb-3">What is the difference between <code class="font-mono">&gt;</code> and <code class="font-mono">&gt;=</code>?</h3>
+            <h3 class="font-extrabold text-base text-alphagen-nearBlack mb-3">What is the difference between <code class="font-mono">&gt;</code> and <code class="font-mono">&gt; = </code>?</h3>
             
             <div class="space-y-2.5">
               <button onclick="checkKnowledgeQ(this, false)" class="quiz-option w-full text-xs">A) They mean the exact same thing</button>
-              <button onclick="checkKnowledgeQ(this, true)" class="quiz-option w-full text-xs">B) <code class="font-mono font-bold">&gt;=</code> includes the exact number, while <code class="font-mono font-bold">&gt;</code> must be strictly greater</button>
+              <button onclick="checkKnowledgeQ(this, true)" class="quiz-option w-full text-xs">B) <code class="font-mono font-bold">&gt; =</code> includes the exact number, while <code class="font-mono font-bold">&gt;</code> must be strictly greater</button>
             </div>
           </div>
           <div class="quiz-feedback hidden mt-3 p-3 rounded-2xl text-xs font-bold text-center"></div>
@@ -634,7 +633,7 @@
       </div>
     </div>
 
-    <!-- SLIDE 8: PYTHON ELIF EXPLAINED (CORRECTED INDENTATION) -->
+    <!-- SLIDE 8: PYTHON ELIF EXPLAINED -->
     <div id="slide-8" class="slide-panel bg-white justify-between">
       <div>
         <span class="text-xs uppercase font-extrabold tracking-wider text-alphagen-purple bg-alphagen-purpleGhost px-4 py-1.5 rounded-md border border-alphagen-purplePale">Syntax Structure</span>
@@ -662,7 +661,7 @@
           </div>
         </div>
 
-        <!-- Live Code & Simulator with Correct Line-Break Indentation -->
+        <!-- Live Code & Simulator -->
         <div class="col-span-7 bg-slate-900 border-2 border-slate-800 rounded-3xl p-6 text-white flex flex-col justify-between font-mono shadow-lg">
           <div>
             <div class="border-b border-slate-800 pb-2 mb-3 text-xs text-alphagen-yellow font-bold flex justify-between">
@@ -759,28 +758,28 @@
       </div>
     </div>
 
-    <!-- SLIDE 10: LOGICAL OPERATORS ANALOGY -->
+    <!-- SLIDE 10: LOGICAL OPERATOR AND ANALOGY -->
     <div id="slide-10" class="slide-panel bg-white justify-between">
       <div>
-        <span class="text-xs uppercase font-extrabold tracking-wider text-alphagen-purple bg-alphagen-purpleGhost px-4 py-1.5 rounded-md border border-alphagen-purplePale">Real-Life Analogy</span>
-        <h2 class="text-3xl font-extrabold text-alphagen-purple mt-2">Logical Operators: Testing Multiple Rules Together</h2>
-        <p class="text-sm text-alphagen-darkGrey font-medium mt-1">When multiple conditions must be tested together, we use logical operators like <code class="font-mono font-bold text-alphagen-purple">and</code>!</p>
+        <span class="text-xs uppercase font-extrabold tracking-wider text-alphagen-purple bg-alphagen-purpleGhost px-4 py-1.5 rounded-md border border-alphagen-purplePale">Real-Life Analogy — AND Operator</span>
+        <h2 class="text-3xl font-extrabold text-alphagen-purple mt-2">The <code class="font-mono">and</code> Operator: Both Conditions Must Be True!</h2>
+        <p class="text-sm text-alphagen-darkGrey font-medium mt-1">When multiple conditions must be tested together and ALL must pass, we use <code class="font-mono font-bold text-alphagen-purple">and</code>!</p>
       </div>
 
       <div class="grid grid-cols-12 gap-6 my-auto items-stretch">
         <!-- Interactive Controls (6 cols) -->
         <div class="col-span-6 bg-alphagen-purpleGhost border-2 border-alphagen-purplePale rounded-3xl p-6 flex flex-col justify-between">
           <div>
-            <h3 class="font-extrabold text-sm text-alphagen-nearBlack mb-4">Teacher's Rule: Complete both to get Special Grade!</h3>
+            <h3 class="font-extrabold text-sm text-alphagen-nearBlack mb-4">Teacher's Rule: Complete BOTH to get Special Grade!</h3>
 
             <!-- Rule 1 Toggle -->
             <div class="bg-white border-2 border-alphagen-purplePale p-4 rounded-2xl mb-4 flex justify-between items-center">
               <div>
                 <strong class="text-xs text-alphagen-nearBlack block">1. Finish Homework</strong>
-                <span id="hw-status-text" class="text-xs text-alphagen-coralDark font-bold">Status: Not done</span>
+                <span id="hw-status-text" class="text-xs text-alphagen-coralDark font-bold">Status: Not completed</span>
               </div>
               <button onclick="toggleHomeworkStatus()" id="hw-toggle-btn" class="bg-alphagen-coral text-white font-extrabold text-xs px-4 py-2.5 rounded-xl btn-interactive">
-                Not done
+                Not completed
               </button>
             </div>
 
@@ -788,10 +787,10 @@
             <div class="bg-white border-2 border-alphagen-purplePale p-4 rounded-2xl flex justify-between items-center">
               <div>
                 <strong class="text-xs text-alphagen-nearBlack block">2. Help Friend with Assignment</strong>
-                <span id="friend-status-text" class="text-xs text-alphagen-coralDark font-bold">Status: Not done</span>
+                <span id="friend-status-text" class="text-xs text-alphagen-coralDark font-bold">Status: Not completed</span>
               </div>
               <button onclick="toggleFriendStatus()" id="friend-toggle-btn" class="bg-alphagen-coral text-white font-extrabold text-xs px-4 py-2.5 rounded-xl btn-interactive">
-                Not done
+                Not completed
               </button>
             </div>
           </div>
@@ -809,7 +808,7 @@
             <div id="logical-grade-result" class="bg-slate-950 p-6 rounded-2xl border border-slate-800 text-center min-h-[160px] flex flex-col justify-center items-center">
               <div class="text-5xl mb-2">❌</div>
               <div class="text-sm font-extrabold text-alphagen-coral">Sorry, you cannot get the special grade yet!</div>
-              <div class="text-xs text-slate-400 font-medium mt-1">Both tasks must be marked "I did it!"</div>
+              <div class="text-xs text-slate-400 font-medium mt-1">Both tasks must be marked "I completed it!"</div>
             </div>
           </div>
 
@@ -821,12 +820,78 @@
       </div>
 
       <div class="bg-alphagen-purpleGhost border border-alphagen-purplePale p-3 rounded-2xl text-xs font-bold text-alphagen-purple text-center">
-        Click both buttons so they turn green ("I did it") to earn the special grade!
+        Click both buttons so they turn green ("I completed it!") to earn the special grade!
       </div>
     </div>
 
-    <!-- SLIDE 11: UNDERSTANDING AND vs OR (EXPLANATION SLIDE) -->
+    <!-- SLIDE 11: LOGICAL OPERATOR OR ANALOGY -->
     <div id="slide-11" class="slide-panel bg-white justify-between">
+      <div>
+        <span class="text-xs uppercase font-extrabold tracking-wider text-alphagen-purple bg-alphagen-purpleGhost px-4 py-1.5 rounded-md border border-alphagen-purplePale">Real-Life Analogy — OR Operator</span>
+        <h2 class="text-3xl font-extrabold text-alphagen-purple mt-2">The <code class="font-mono">or</code> Operator: At Least One Condition Must Be True!</h2>
+        <p class="text-sm text-alphagen-darkGrey font-medium mt-1">You can go to your friend's house if you finish your homework OR if you eat all your fruits and vegetables!</p>
+      </div>
+
+      <div class="grid grid-cols-12 gap-6 my-auto items-stretch">
+        <!-- Interactive Controls (6 cols) -->
+        <div class="col-span-6 bg-alphagen-yellowPale border-2 border-yellow-300 rounded-3xl p-6 flex flex-col justify-between">
+          <div>
+            <h3 class="font-extrabold text-sm text-alphagen-nearBlack mb-4">Parent's Rule: Complete AT LEAST ONE task to go play!</h3>
+
+            <!-- Rule 1 Toggle -->
+            <div class="bg-white border-2 border-yellow-200 p-4 rounded-2xl mb-4 flex justify-between items-center">
+              <div>
+                <strong class="text-xs text-alphagen-nearBlack block">1. Finish Homework</strong>
+                <span id="or-hw-status-text" class="text-xs text-alphagen-coralDark font-bold">Status: Not completed</span>
+              </div>
+              <button onclick="toggleOrHwStatus()" id="or-hw-toggle-btn" class="bg-alphagen-coral text-white font-extrabold text-xs px-4 py-2.5 rounded-xl btn-interactive">
+                Not completed
+              </button>
+            </div>
+
+            <!-- Rule 2 Toggle -->
+            <div class="bg-white border-2 border-yellow-200 p-4 rounded-2xl flex justify-between items-center">
+              <div>
+                <strong class="text-xs text-alphagen-nearBlack block">2. Eat Fruits &amp; Vegetables for Lunch</strong>
+                <span id="or-veggies-status-text" class="text-xs text-alphagen-coralDark font-bold">Status: Not completed</span>
+              </div>
+              <button onclick="toggleOrVeggiesStatus()" id="or-veggies-toggle-btn" class="bg-alphagen-coral text-white font-extrabold text-xs px-4 py-2.5 rounded-xl btn-interactive">
+                Not completed
+              </button>
+            </div>
+          </div>
+
+          <div class="bg-white border-2 border-yellow-300 p-3.5 rounded-2xl text-xs text-alphagen-nearBlack font-extrabold text-center">
+            With OR: AT LEAST ONE condition needs to be True!
+          </div>
+        </div>
+
+        <!-- Friend's House Visit Result Screen (6 cols) -->
+        <div class="col-span-6 bg-slate-900 border-2 border-slate-800 rounded-3xl p-6 text-white flex flex-col justify-between shadow-lg">
+          <div>
+            <span class="text-xs font-mono text-alphagen-yellow font-bold uppercase block mb-3">VISIT FRIEND'S HOUSE RESULT</span>
+            
+            <div id="or-visit-result" class="bg-slate-950 p-6 rounded-2xl border border-slate-800 text-center min-h-[160px] flex flex-col justify-center items-center">
+              <div class="text-5xl mb-2">🏠❌</div>
+              <div class="text-sm font-extrabold text-alphagen-coral">You cannot visit your friend's house yet!</div>
+              <div class="text-xs text-slate-400 font-medium mt-1">Complete at least 1 task to go play!</div>
+            </div>
+          </div>
+
+          <div class="bg-slate-950 p-4 rounded-2xl border border-slate-800 font-mono text-xs text-slate-300">
+            <span class="text-purple-400 font-bold">if</span> finished_hw <span class="text-alphagen-yellow font-bold">or</span> ate_veggies:<br>
+            &nbsp;&nbsp;print(<span class="text-emerald-300">"🏡 You can go to your friend's house!"</span>)
+          </div>
+        </div>
+      </div>
+
+      <div class="bg-alphagen-purpleGhost border border-alphagen-purplePale p-3 rounded-2xl text-xs font-bold text-alphagen-purple text-center">
+        Click either button to mark it completed ("I completed it!") and unlock permission to visit your friend!
+      </div>
+    </div>
+
+    <!-- SLIDE 12: UNDERSTANDING AND vs OR (EXPLANATION SLIDE) -->
+    <div id="slide-12" class="slide-panel bg-white justify-between">
       <div>
         <span class="text-xs uppercase font-extrabold tracking-wider text-alphagen-purple bg-alphagen-purpleGhost px-4 py-1.5 rounded-md border border-alphagen-purplePale">Core Concept</span>
         <h2 class="text-3xl font-extrabold text-alphagen-purple mt-2">Understanding <code class="font-mono">and</code> vs <code class="font-mono">or</code> Operators</h2>
@@ -882,8 +947,8 @@
       </div>
     </div>
 
-    <!-- SLIDE 12: LOGICAL OPERATORS CODING CHALLENGES (INLINE CHECKLIST) -->
-    <div id="slide-12" class="slide-panel bg-white justify-between">
+    <!-- SLIDE 13: LOGICAL OPERATORS CODING CHALLENGES (INLINE CHECKLIST) -->
+    <div id="slide-13" class="slide-panel bg-white justify-between">
       <div>
         <span class="text-xs uppercase font-extrabold tracking-wider text-alphagen-purple bg-alphagen-purpleGhost px-4 py-1.5 rounded-md border border-alphagen-purplePale">Lab Challenge 3</span>
         <h2 class="text-3xl font-extrabold text-alphagen-purple mt-2"><span class="text-alphagen-purple">Logical Operators</span> <span class="text-alphagen-yellowDark">Coding Challenge</span></h2>
@@ -937,8 +1002,8 @@
       </div>
     </div>
 
-    <!-- SLIDE 13: MASTER KNOWLEDGE CHECK -->
-    <div id="slide-13" class="slide-panel bg-white justify-between">
+    <!-- SLIDE 14: MASTER KNOWLEDGE CHECK -->
+    <div id="slide-14" class="slide-panel bg-white justify-between">
       <div>
         <span class="text-xs uppercase font-extrabold tracking-wider text-alphagen-purple bg-alphagen-purpleGhost px-4 py-1.5 rounded-md border border-alphagen-purplePale">Mastery Check</span>
         <h2 class="text-3xl font-extrabold text-alphagen-purple mt-2">Final Concept Quiz</h2>
@@ -1001,7 +1066,7 @@
 
 <script>
 let currentSlide = 1;
-const totalSlides = 13;
+const totalSlides = 14;
 let soundEnabled = true;
 const audioCtx = new (window.AudioContext || window.webkitAudioContext)();
 
@@ -1364,7 +1429,7 @@ function updateElifCodeDemo() {
   playSound('pop');
 }
 
-/* SLIDE 10: LOGICAL OPERATORS TOGGLES */
+/* SLIDE 10: LOGICAL OPERATOR AND TOGGLES */
 let hwDone = false;
 let friendDone = false;
 
@@ -1374,14 +1439,14 @@ function toggleHomeworkStatus() {
   const txt = document.getElementById('hw-status-text');
 
   if (hwDone) {
-    btn.innerText = 'I did it!';
+    btn.innerText = 'I completed it!';
     btn.className = 'bg-emerald-600 text-white font-extrabold text-xs px-4 py-2.5 rounded-xl btn-interactive';
     txt.innerText = 'Status: Completed!';
     txt.className = 'text-xs text-emerald-700 font-bold';
   } else {
-    btn.innerText = 'Not done';
+    btn.innerText = 'Not completed';
     btn.className = 'bg-alphagen-coral text-white font-extrabold text-xs px-4 py-2.5 rounded-xl btn-interactive';
-    txt.innerText = 'Status: Not done';
+    txt.innerText = 'Status: Not completed';
     txt.className = 'text-xs text-alphagen-coralDark font-bold';
   }
   evaluateLogicalGrade();
@@ -1394,14 +1459,14 @@ function toggleFriendStatus() {
   const txt = document.getElementById('friend-status-text');
 
   if (friendDone) {
-    btn.innerText = 'I did it!';
+    btn.innerText = 'I completed it!';
     btn.className = 'bg-emerald-600 text-white font-extrabold text-xs px-4 py-2.5 rounded-xl btn-interactive';
     txt.innerText = 'Status: Completed!';
     txt.className = 'text-xs text-emerald-700 font-bold';
   } else {
-    btn.innerText = 'Not done';
+    btn.innerText = 'Not completed';
     btn.className = 'bg-alphagen-coral text-white font-extrabold text-xs px-4 py-2.5 rounded-xl btn-interactive';
-    txt.innerText = 'Status: Not done';
+    txt.innerText = 'Status: Not completed';
     txt.className = 'text-xs text-alphagen-coralDark font-bold';
   }
   evaluateLogicalGrade();
@@ -1423,7 +1488,71 @@ function evaluateLogicalGrade() {
     box.innerHTML = `
       <div class="text-5xl mb-2">❌</div>
       <div class="text-sm font-extrabold text-alphagen-coral">Sorry, you cannot get the special grade yet!</div>
-      <div class="text-xs text-slate-400 font-medium mt-1">Both tasks must be marked "I did it!"</div>
+      <div class="text-xs text-slate-400 font-medium mt-1">Both tasks must be marked "I completed it!"</div>
+    `;
+  }
+}
+
+/* SLIDE 11: LOGICAL OPERATOR OR TOGGLES */
+let orHwDone = false;
+let orVeggiesDone = false;
+
+function toggleOrHwStatus() {
+  orHwDone = !orHwDone;
+  const btn = document.getElementById('or-hw-toggle-btn');
+  const txt = document.getElementById('or-hw-status-text');
+
+  if (orHwDone) {
+    btn.innerText = 'I completed it!';
+    btn.className = 'bg-emerald-600 text-white font-extrabold text-xs px-4 py-2.5 rounded-xl btn-interactive';
+    txt.innerText = 'Status: Completed!';
+    txt.className = 'text-xs text-emerald-700 font-bold';
+  } else {
+    btn.innerText = 'Not completed';
+    btn.className = 'bg-alphagen-coral text-white font-extrabold text-xs px-4 py-2.5 rounded-xl btn-interactive';
+    txt.innerText = 'Status: Not completed';
+    txt.className = 'text-xs text-alphagen-coralDark font-bold';
+  }
+  evaluateOrVisit();
+  playSound('pop');
+}
+
+function toggleOrVeggiesStatus() {
+  orVeggiesDone = !orVeggiesDone;
+  const btn = document.getElementById('or-veggies-toggle-btn');
+  const txt = document.getElementById('or-veggies-status-text');
+
+  if (orVeggiesDone) {
+    btn.innerText = 'I completed it!';
+    btn.className = 'bg-emerald-600 text-white font-extrabold text-xs px-4 py-2.5 rounded-xl btn-interactive';
+    txt.innerText = 'Status: Completed!';
+    txt.className = 'text-xs text-emerald-700 font-bold';
+  } else {
+    btn.innerText = 'Not completed';
+    btn.className = 'bg-alphagen-coral text-white font-extrabold text-xs px-4 py-2.5 rounded-xl btn-interactive';
+    txt.innerText = 'Status: Not completed';
+    txt.className = 'text-xs text-alphagen-coralDark font-bold';
+  }
+  evaluateOrVisit();
+  playSound('pop');
+}
+
+function evaluateOrVisit() {
+  const box = document.getElementById('or-visit-result');
+  if (!box) return;
+
+  if (orHwDone || orVeggiesDone) {
+    box.innerHTML = `
+      <div class="text-5xl mb-2">🏡🎉</div>
+      <div class="text-sm font-extrabold text-alphagen-yellow">Awesome! You can go to your friend's house!</div>
+      <div class="text-xs text-slate-300 font-medium mt-1">At least one condition is TRUE!</div>
+    `;
+    triggerSuccess();
+  } else {
+    box.innerHTML = `
+      <div class="text-5xl mb-2">🏠❌</div>
+      <div class="text-sm font-extrabold text-alphagen-coral">You cannot visit your friend's house yet!</div>
+      <div class="text-xs text-slate-400 font-medium mt-1">Complete at least 1 task to go play!</div>
     `;
   }
 }
